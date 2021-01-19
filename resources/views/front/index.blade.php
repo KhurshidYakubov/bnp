@@ -1,9 +1,9 @@
 @extends('layouts.front')
 @section('content')
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
+    <section id="hero" class="d-flex align-items-center" style="background-image: url({{ asset('images/banner.jpg') }})">
         <div class="container" data-aos="zoom-out" data-aos-delay="100">
-            <h1>Welcome to <span>BizLand</spa>
+            <h1>Welcome to <span>Bukhara Natural Product</spa>
             </h1>
             <h2>We are team of talanted designers making websites with Bootstrap</h2>
             <div class="d-flex">

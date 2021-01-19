@@ -2,8 +2,8 @@
 <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
     <div class="container d-flex">
         <div class="contact-info mr-auto">
-            <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-            <i class="icofont-phone"></i> +1 5589 55488 55
+            <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">info@bnpfabric.com</a>
+            <i class="icofont-phone"></i> +998 97 300 75 85
         </div>
         <div class="social-links">
             <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
