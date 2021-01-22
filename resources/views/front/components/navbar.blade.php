@@ -20,18 +20,21 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-        <h1 class="logo mr-auto"><a href="/"><img src="{{ asset('images/logo.png') }}" alt="">
-            </a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+        <h1 class="logo mr-auto"><a href="/"><img src="{{ asset('images/logo.png') }}" alt=""></a></h1>
 
         <nav class="nav-menu d-none d-lg-block">
             <ul>
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="/">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#about">Products</a></li>
+                <li><a href="#products">Products</a></li>
                 <li><a href="#contact">Contact</a></li>
-
+                <li class="drop-down">{{ app()->getLocale() }}
+                    <ul>
+                        <li><a href="/en">Eng</a></li>
+                        <li><a href="/ru">Rus</a></li>
+                        <li><a href="/uz">Uzb</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav><!-- .nav-menu -->
 
