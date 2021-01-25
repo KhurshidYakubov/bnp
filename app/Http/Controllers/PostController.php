@@ -73,10 +73,10 @@ class PostController extends Controller
         $cat_id = Category::find(6);
 
         $post_data = [
-            'oz' => [
-                'title' => $request->oz_title,
-                'body' => $request->oz_body,
-                'short_desc' => $request->oz_short_desc,
+            'en' => [
+                'title' => $request->en_title,
+                'body' => $request->en_body,
+                'short_desc' => $request->en_short_desc,
             ],
             'uz' => [
                 'title' => $request->uz_title,
@@ -162,24 +162,21 @@ class PostController extends Controller
         $cat_id = Category::find(6);
 
         $post_data = [
-            'oz' => [
-                'title' => $request->oz_title,
-                'body' => $request->oz_body,
-                'short_desc' => $request->oz_short_desc,
-                'tags' => $request->oz_tags,
+            'en' => [
+                'title' => $request->en_title,
+                'body' => $request->en_body,
+                'short_desc' => $request->en_short_desc,
             ],
             'uz' => [
                 'title' => $request->uz_title,
                 'body' => $request->uz_body,
                 'short_desc' => $request->uz_short_desc,
-                'tags' => $request->uz_tags,
 
             ],
             'ru' => [
                 'title' => $request->ru_title,
                 'body' => $request->ru_body,
                 'short_desc' => $request->ru_short_desc,
-                'tags' => $request->uz_tags,
             ],
             'category_id' => $cat_id->id,
             'definition' => $request->definition,

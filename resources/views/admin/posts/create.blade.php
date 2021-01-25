@@ -15,20 +15,10 @@
 
                     <form action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data" autocomplete="off">
                         @csrf
-{{--                        <div class="form-group">--}}
-{{--                            <strong>{{ __('main.category') }}</strong>--}}
-{{--                            <select class="form-control" name="category">--}}
-{{--                                @foreach ($category as $key => $value)--}}
-{{--                                    <option value="{{ $key }}">--}}
-{{--                                        {{ $value }}--}}
-{{--                                    </option>--}}
-{{--                                @endforeach--}}
-{{--                            </select>--}}
-{{--                        </div>--}}
                         <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-bottom: 20px;">
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#oz" role="tab"
-                                   aria-controls="home" aria-selected="true">O'Z</a>
+                                   aria-controls="home" aria-selected="true">EN</a>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#uz" role="tab"
@@ -42,21 +32,21 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="oz" role="tabpanel" aria-labelledby="home-tab">
                                 <div class="form-group">
-                                    <label class="required" for="oz_title">{{ __('main.title') }} | O'z</label>
-                                    <input class="form-control {{ $errors->has('oz_title') ? 'is-invalid' : '' }}"
-                                           type="text" name="oz_title" id="oz_title"
-                                           value="{{ old('oz_title', '') }}">
+                                    <label class="required" for="en_title">{{ __('main.title') }} | En</label>
+                                    <input class="form-control {{ $errors->has('en_title') ? 'is-invalid' : '' }}"
+                                           type="text" name="en_title" id="en_title"
+                                           value="{{ old('en_title', '') }}">
                                 </div>
                                 <div class="form-group">
-                                    <label class="required" for="oz_short_desc">{{ __('main.short_desc') }} | O'z</label>
-                                    <input class="form-control {{ $errors->has('oz_short_desc') ? 'is-invalid' : '' }}"
-                                           type="text" name="oz_short_desc" id="oz_short_desc"
-                                           value="{{ old('oz_short_desc', '') }}">
+                                    <label class="required" for="en_short_desc">{{ __('main.short_desc') }} | En</label>
+                                    <input class="form-control {{ $errors->has('en_short_desc') ? 'is-invalid' : '' }}"
+                                           type="text" name="en_short_desc" id="en_short_desc"
+                                           value="{{ old('en_short_desc', '') }}">
                                 </div>
                                 <div class="form-group">
-                                    <label>{{ __('main.body') }} | O'z</label>
-                                    <textarea class="form-control {{ $errors->has('oz_body') ? 'is-invalid' : '' }}"
-                                              name="oz_body" id="editor_oz">{{ old('oz_body') }}</textarea>
+                                    <label>{{ __('main.body') }} | En</label>
+                                    <textarea class="form-control {{ $errors->has('en_body') ? 'is-invalid' : '' }}"
+                                              name="oz_body" id="editor_oz">{{ old('en_body') }}</textarea>
                                 </div>
 
 
