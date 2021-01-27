@@ -34,7 +34,7 @@
                     <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-bottom: 20px;">
                         <li class="nav-item" role="presentation">
                             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#oz" role="tab"
-                               aria-controls="home" aria-selected="true">O'Z</a>
+                               aria-controls="home" aria-selected="true">EN</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#uz" role="tab"
@@ -52,15 +52,15 @@
                                 <tbody>
                                 <tr>
                                     <td>{{ __('main.title') }}:</td>
-                                    <th scope="row">{{ $post_view->translate('oz')->title ?? '' }}</th>
+                                    <th scope="row">{{ $post_view->translate('en')->title ?? '' }}</th>
                                 </tr>
                                 <tr>
                                     <td>{{ __('main.short_desc') }}:</td>
-                                    <th scope="row">{{ $post_view->translate('oz')->short_desc ?? '' }}</th>
+                                    <th scope="row">{{ $post_view->translate('en')->short_desc ?? '' }}</th>
                                 </tr>
                                 <tr>
                                     <td>{{ __('main.body') }}:</td>
-                                    <th scope="row">{!!  $post_view->translate('oz')->body ?? '' !!}</th>
+                                    <th scope="row">{!!  $post_view->translate('en')->body ?? '' !!}</th>
                                 </tr>
                                 </tbody>
                             </table>

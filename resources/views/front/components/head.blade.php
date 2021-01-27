@@ -17,8 +17,7 @@
 
     <!-- Vendor CSS Files -->
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
-{{--    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">--}}
-{{--    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">--}}
+    <link href="{{asset('fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.2/venobox.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">

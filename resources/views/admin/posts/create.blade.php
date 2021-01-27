@@ -46,7 +46,7 @@
                                 <div class="form-group">
                                     <label>{{ __('main.body') }} | En</label>
                                     <textarea class="form-control {{ $errors->has('en_body') ? 'is-invalid' : '' }}"
-                                              name="oz_body" id="editor_oz">{{ old('en_body') }}</textarea>
+                                              name="en_body" id="editor_oz">{{ old('en_body') }}</textarea>
                                 </div>
 
 

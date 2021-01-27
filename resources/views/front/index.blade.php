@@ -111,10 +111,9 @@
                             <div class="portfolio-info">
                                 <h4>{{ $item->translate(app()->getLocale())->title }}</h4>
                                 <p>Web</p>
-                                <a href="{{ asset('images/ecobag.jpg') }}" data-gall="portfolioGallery"
-                                   class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                        class="bx bx-link"></i></a>
+                                <a href="storage/images/{{ $item->img }}" data-gall="portfolioGallery"
+                                   class="venobox preview-link" title="Web 3"><i class="fas fa-search-plus"></i></a>
+                                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="fas fa-info-circle"></i></a>
                             </div>
                         </div>
                     @endforeach
